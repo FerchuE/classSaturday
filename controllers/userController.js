@@ -81,6 +81,7 @@ module.exports =  {
                 }
 
                 const token = await generatorToken({id:usuario._id, email:usuario.email})
+                console.log ('usuario logeado ' + usuario._id)
                 res.json({msg: "usuario logeado", token})
             } else {
                 res.json(err)
