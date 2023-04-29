@@ -29,11 +29,11 @@ const getItems = async (token) => {
 
 const createItem = async (token, body)=>{
     try {
-        const createItem = await axios.post(,{
-            nombre: body.nombre
-            pais: body.pais
-            copas: body.copas
-            clasifico body.clasifico
+        const createItem = await axios.post("",{
+            nombre: body.nombre,
+            pais: body.pais,
+            copas: body.copas,
+            clasifico: body.clasifico
         },{
             headers:{
                 'x-token': token
